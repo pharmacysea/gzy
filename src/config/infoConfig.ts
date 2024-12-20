@@ -49,7 +49,7 @@ export const socialLinks: Array<SocialLinkType> = [
   },
   {
     name: 'Bilibili',
-    icon: '/images/icon/bilibili.png',
+    icon: 'bilibili',
     href: 'https://space.bilibili.com/76563918?spm_id_from=333.1007.0.0'
   },
   {
@@ -89,7 +89,7 @@ export const educationList: Array<EducationItemType> = [
   {
     school: '华东理工大学',
     major: '药学',
-    logo: 'ecust‘',
+    logo: 'ecust',
     start: '2023',
     end: '2026'
   }
