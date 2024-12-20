@@ -15,6 +15,7 @@ import {
 import Image from 'next/image'
 import cpu from '../../../public/images/icon/cpu.png'
 import ECUST from '../../../public/images/icon/ECUST.png'
+import { IconBrandBilibili } from '@tabler/icons-react'
 
 
 export function CustomIcon({ name, size = 20 }: { name: string; size?: number }) {
@@ -41,12 +42,13 @@ export function CustomIcon({ name, size = 20 }: { name: string; size?: number })
             return <WechatLogo size={size} weight="duotone" />;
         case 'bilibili':
             return (
-                <Image
-                    src="/images/icon/bilibili.png"
-                    alt="bilibili icon"
-                    width={size}
-                    height={size}
-                />
+                // `<Image
+                //     src="/images/icon/bilibili.png"
+                //     alt="bilibili icon"
+                //     width={size}
+                //     height={size}
+                // />
+                <IconBrandBilibili />
             );
         case 'chinapu':
             return <Image src={cpu} alt="cpu icon" />;
