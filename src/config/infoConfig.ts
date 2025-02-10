@@ -1,4 +1,3 @@
-
 // personal info
 export const name = '高正阳'
 export const headline = '独立开发，AI爱好者，药学硕士'
@@ -38,14 +37,15 @@ export type SocialLinkType = {
   name: string,
   ariaLabel?: string,
   icon: string,
-  href: string
+  href?: string,
+  onClick?: boolean
 }
 
 export const socialLinks: Array<SocialLinkType> = [
   {
     name: 'X',
     icon: 'x',
-    href: 'https://x.com/realcoreychiu'
+    href: 'https://x.com/zhengyang7869?s=21'
   },
   {
     name: 'Bilibili',
@@ -59,8 +59,7 @@ export const socialLinks: Array<SocialLinkType> = [
   },
   {
     name: 'Wechat',
-    icon: 'wechat',
-    href: 'https://mp.weixin.qq.com/s/DxnRgqNfgzXIhqj6w_x0dQ'
+    icon: 'wechat'
   },
 ]
 
@@ -152,6 +151,16 @@ export const projects: Array<ProjectItemType> = [
     tags: ['AI', '游戏创造']
   },
   {
+    name: '实况喵',
+    description:
+      '定格瞬间，留住生动 —— 静态图一键转 Live Photo，让你的照片动起来。',
+    link: { href: 'https://apps.apple.com/cn/app/%E5%AE%9E%E5%86%B5%E5%96%B5-%E9%9D%99%E6%80%81%E7%85%A7%E7%89%87%E7%94%9F%E6%88%90live%E5%9B%BE/id6739980277?utm_source=yansoul.com', label: '实况喵' },
+    logo: '/images/livemiao.jpg',
+    category: ['Website'],
+    techStack: ['swift', 'iOS开发'],
+    tags: ['LivePhoto', 'AI视频']
+  },
+  {
     name: 'elysia sudo',
     description:
       '数独游戏+爱莉希雅',
@@ -161,6 +170,7 @@ export const projects: Array<ProjectItemType> = [
     techStack: ['Next.js', 'TailwindCSS', 'Shadcn/UI'],
     tags: ['tts', '数独创造']
   },
+
 ]
 
 export const githubProjects: Array<ProjectItemType> = [
